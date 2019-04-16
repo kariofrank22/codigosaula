@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int imc(float massa, float altura){
+
+    float cal_imc;
+    cal_imc = massa / (altura * altura);
+    return cal_imc;
+}
+
+int main(){
+
+    float massa, altura, cal;
+    
+    printf("Peso: ");
+    scanf("%f", &massa);
+
+    printf("Altura: ");
+    scanf("%f",&altura);
+
+    cal = imc(massa, altura);
+
+    printf("%0.2f", cal);
+
+    return 0;
+
+}
