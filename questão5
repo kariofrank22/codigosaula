@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+void verificacao(int num){
+
+     if(num >= 1)
+
+            printf("VERDADEIRO");
+
+        else if(num <= -1)
+
+            printf("FALSO");
+
+        else{
+
+            printf("NULO (0)");
+
+            printf("\nSELECIONE UMA DAS OPCOES\n\n");
+
+            printf("> QUE 0(zero) \n< QUE 0(zero) \n\n");
+
+            main();
+        }
+}
+int main(){
+
+    int num;
+
+    printf("NUMERO: ");
+    scanf("%d", &num);
+
+    verificacao(num);
+
+    return 0;
+}
